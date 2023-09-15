@@ -43,7 +43,7 @@ add_my_fruit = streamlit.text_input('What fruit would you like to add?','')
 streamlit.write('Thanks for adding ', add_my_fruit)
 #my_fruit_list = my_fruit_list.append(add_my_fruit)
 my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('from streamlit')")
-#streamlit.stop()
+streamlit.stop()
 
 #my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 my_cur.execute("SELECT * from fruit_load_list")
